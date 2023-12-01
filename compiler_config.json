@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "": [
+          "ast"
+        ],
+        "*": [
+          "abi",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.legacyAssembly",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "evm.gasEstimates",
+          "evm.assembly"
+        ]
+      }
+    },
+    "remappings": [
+      "@prb/test/=lib/prb-test/src/",
+      "forge-std/=lib/forge-std/src/",
+      "erc721a/=lib/ERC721A/",
+      "@openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ]
+  }
+}
